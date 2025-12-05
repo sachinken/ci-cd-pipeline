@@ -64,8 +64,8 @@ jobs:
 
       - name: Build, tag, and push image
         run: |
-          docker build -t app-image .
-          docker tag app-image:latest ${{ secrets.AWS_ECR_REPO }}:latest
+          docker build -t nextjs-demo-app .
+          docker tag nextjs-demo-app:latest ${{ secrets.AWS_ECR_REPO }}:latest
           docker push ${{ secrets.AWS_ECR_REPO }}:latest
 
       - name: Deploy to ECS
