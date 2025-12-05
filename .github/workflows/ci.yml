@@ -41,4 +41,4 @@ jobs:
         run: npm run build
 
       - name: Validate Docker build
-        run: docker build -t nextjs-app .
+        run: docker build -t demo-app .
